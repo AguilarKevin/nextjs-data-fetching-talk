@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "fix": "eslint --fix \"**/*.{ts,tsx}\"",
+    "format": "prettier --write \"**/*.{json,md,ts,tsx}\" \"{.babelrc,.eslintrc}\"",
+    "lint": "next lint -d components -d context -d pages -d relay -d sections -d theme -d utils",
+    "start": "next start"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.3.2",
