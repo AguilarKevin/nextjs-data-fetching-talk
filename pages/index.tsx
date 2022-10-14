@@ -1,3 +1,5 @@
+import {HomePage} from 'sections/Home/HomePage'
+
 export default function IndexPage() {
-  return <div>home</div>;
+  return <HomePage />
 }
